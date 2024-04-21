@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let livros = [
+            {
+                nome:" A Arte da Gerra",
+                autor:" Um Japônes",
+                ano: 2024,
+                emprestado: true,
+                categorias: [" fantasia", "fixão"],
+                revisoes : [
+                    {
+                        comentaio: " Fantástico",
+                        avaliacao: 5
+                    },
+                    {
+                        comentario: " livro mais ou menos",
+                        avaliacao: 3
+                    },
+                    {
+                        comentario: " livro muito Ruim.Não gostei!",
+                        avaliacao: 0
+                    }
+                ]
+            }
+            ]
+        var livrosEmprestados = " nao";
+        if(livros[0].emprestado){
+            livrosEmprestados = " sim";
+        }
+      
+      console.log(`nome:${livros[0].nome}
+      autor:${livros[0].autor}
+      ano:${livros[0].ano}
+      emprestado:${livrosEmprestados}
+      categorias:${livros[0].categorias[0]}
+      revisoes:${livros[0].revisoes[0].avaliacao}`);
+    </script>
+</body>
+
+</html>

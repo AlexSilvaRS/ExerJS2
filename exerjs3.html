@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExerJS3</title>
+</head>
+<body>
+    <script>
+        function aplicaDesconto(preco, desconto) {
+    // Calcula o valor do desconto
+    const valorDesconto = preco * (desconto / 100);
+    
+    // Calcula o preço final com desconto
+    const precoFinal = preco - valorDesconto;
+    
+    return precoFinal;
+}
+
+// Exemplos de uso da função
+const precoProduto1 = 100; // Preço do primeiro produto
+const descontoProduto1 = 10; // Percentual de desconto para o primeiro produto
+const precoFinalProduto1 = aplicaDesconto(precoProduto1, descontoProduto1);
+
+console.log(`Preço do Produto 1: R$${precoProduto1}`);
+console.log(`Preço do Produto 1 com Desconto: R$${precoFinalProduto1}`);
+
+const precoProduto2 = 50; // Preço do segundo produto
+const descontoProduto2 = 20; // Percentual de desconto para o segundo produto
+const precoFinalProduto2 = aplicaDesconto(precoProduto2, descontoProduto2);
+
+console.log(`Preço do Produto 2: R$${precoProduto2}`);
+console.log(`Preço do Produto 2 com Desconto: R$${precoFinalProduto2}`);
+
+    </script>
+</body>
+</html>
